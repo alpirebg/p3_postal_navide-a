@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POSTAL NAVIDEÑA</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.dom.min.js"></script>
+</head>
+
+<body>
+  <div class="app">
+
+    <aside class="sidebar" id="controls">
+      <h1>Postal Navideña</h1>
+      <p class="sub">Herramienta interactiva, creada por Geraldine Alpire. Permite diseñar postales y carteles navideños personalizados. Los usuarios pueden experimentar con los colores del fondo, el árbol y las decoraciones, así como elegir diferentes formas para las decoraciones.</p>
+
+      <details class="acc" open>
+        <summary>Colores</summary>
+        <div class="acc-body" id="panel-colors"></div>
+      </details>
+
+      <details class="acc">
+        <summary>Decoración</summary>
+        <div class="acc-body" id="panel-deco"></div>
+      </details>
+
+      <details class="acc">
+        <summary>Tamaño</summary>
+        <div class="acc-body" id="panel-size"></div>
+      </details>
+
+      <details class="acc">
+        <summary>Texto</summary>
+        <div class="acc-body" id="panel-text"></div>
+      </details>
+    </aside>
+
+    <main class="stage">
+     <div class="canvas-frame">
+  <div id="canvas-container"></div>
+</div>
+
+    </main>
+
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
